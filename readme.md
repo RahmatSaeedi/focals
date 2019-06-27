@@ -89,4 +89,8 @@ Example:
 ```bash
 > node dice-roller 3
 Rolled 3 dice: 2, 6, 5
+
+> node dice-roller 5 10
+Rolled 5 dice: 6, 5, 5, 1, 1
+Rolled 10 dice: 6, 2, 6, 1, 2, 5, 4, 5, 1, 4
 ```
