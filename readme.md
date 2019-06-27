@@ -108,3 +108,18 @@ iH .ereht woH era ?uoy
 > node reverse I am good. Thank you for asking.
 I ma .doog knahT uoy rof .gniksa
 ```
+
+## [isPalindrome.js](isPalindrome.js)
+Checks if a string or sentence a palindrome.
+
+Examples:
+```bash
+> node isPalindrome "a santa at NASA"
+true
+
+> node isPalindrome "racecar"
+true
+
+> node isPalindrome "foo"
+false
+```
