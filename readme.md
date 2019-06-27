@@ -5,11 +5,11 @@ Daily challenges from [Light House Labs Web Development Bootcamp]().
 ## sum.js
 This file sums the input argumets
 ```bash
-node sum 1 2
-  # Prints: 3
+> node sum 1 2
+3
 
-node sum 100 20 30 50
-  # Prints: 200
+> node sum 100 20 30 50
+200
 ```
 
 ## lunch.js
@@ -33,10 +33,7 @@ Output:
 ## stringReverser.js
 Reverses the order of characters in a string. String are pssed via `bash` argv arguments.
  ```bash
-node reverse.js hello goodbye
-```
-Returns:
-```javascript
+> node reverse.js hello goodbye
 olleh
 eybdoog
 ```
@@ -45,13 +42,13 @@ eybdoog
 Converts each input argument srings to pig latin (using simplified rules), then puts the translated words together into one sentence, and logges it to the console.
 
 ```bash
-node pig-latin Hi my name is John
-  # output: ihay mymyay amenay isyay ohnjay
+> node pig-latin Hi my name is John
+ihay mymyay amenay isyay ohnjay
 ```
 
 ```bash
-node pig-latin this is all just gibberish
-  # output: isthay isyay allyay ustjay ibberishgay
+> node pig-latin this is all just gibberish
+isthay isyay allyay ustjay ibberishgay
 ```
 ## concepts.js
 Joins an array of strings.
@@ -62,8 +59,8 @@ const conceptList = ["gists", "types", "operators", "iteration", "problem solvin
 console.log(conceptList);
 ```
 ```bash
-node concepts.js
-# returns: Today I learned about gists, types, operators, iteration, problem solving.
+> node concepts
+Today I learned about gists, types, operators, iteration, problem solving.
 ```
 
 ## password.js
@@ -75,12 +72,21 @@ Takes a command line argument (a password) and obfuscates it by following a few 
     * Every "l" (el) in the string should be replaced with a "1" (one).
 
 ```bash 
-node password.js password
-# Returns: p4ssw0rd
+> node password.js password
+p4ssw0rd
 
-node password.js abracadabra
-# Returns: 4br4c4d4br4
+> node password.js abracadabra
+4br4c4d4br4
 
-node password.js audaciously
-# Returns: 4ud4ci0us1y
+> node password.js audaciously
+4ud4ci0us1y
+```
+
+## dice-roller.js
+Takes a single parameter (a number) from the command line and rolls that many six-sided dice. 
+
+Example:
+```bash
+> node dice-roller 3
+Rolled 3 dice: 2, 6, 5
 ```
