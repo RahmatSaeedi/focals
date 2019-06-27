@@ -1,5 +1,5 @@
 # Focals
-Daily challenges from [Light House Labs Web Development Bootcamp]().
+Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 1
 ## [sum.js](sum.js)
