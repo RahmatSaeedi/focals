@@ -94,3 +94,17 @@ Rolled 3 dice: 2, 6, 5
 Rolled 5 dice: 6, 5, 5, 1, 1
 Rolled 10 dice: 6, 2, 6, 1, 2, 5, 4, 5, 1, 4
 ```
+## [average.js](average.js)
+Averages a given array of numbers.
+
+
+## [reverse.js](reverse.js)
+Reverse the characters of words passed via command line arguments.
+
+```bash
+> node reverse Hi there. How are you?
+iH .ereht woH era ?uoy
+
+> node reverse I am good. Thank you for asking.
+I ma .doog knahT uoy rof .gniksa
+```
