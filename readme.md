@@ -2,7 +2,7 @@
 Daily challenges from [Light House Labs Web Development Bootcamp]().
 
 # Week 1
-## sum.js
+## [sum.js](sum.js)
 This file sums the input argumets
 ```bash
 > node sum 1 2
@@ -12,7 +12,7 @@ This file sums the input argumets
 200
 ```
 
-## lunch.js
+## [lunch.js](lunch.js)
 A function such that it takes 2 input and prints a suggestion. (Boolean representing state of hunger, & number representing time in minutes to spare)
 
 Output:
@@ -30,7 +30,7 @@ Output:
   Pick something up and eat in the lab
 ```
 
-## stringReverser.js
+## [stringReverser.js](stringReverser.js)
 Reverses the order of characters in a string. String are pssed via `bash` argv arguments.
  ```bash
 > node reverse.js hello goodbye
@@ -38,7 +38,7 @@ olleh
 eybdoog
 ```
 
-## pig-latin.js
+## [pig-latin.js](pig-latin.js)
 Converts each input argument srings to pig latin (using simplified rules), then puts the translated words together into one sentence, and logges it to the console.
 
 ```bash
@@ -63,7 +63,7 @@ console.log(conceptList);
 Today I learned about gists, types, operators, iteration, problem solving.
 ```
 
-## password.js
+## [password.js](password.js)
 Takes a command line argument (a password) and obfuscates it by following a few rules.
 * Obfuscation Rules
     * Every "a" in the string should be replaced with a "4".
