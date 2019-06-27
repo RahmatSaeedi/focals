@@ -82,7 +82,7 @@ p4ssw0rd
 4ud4ci0us1y
 ```
 
-## dice-roller.js
+## [dice-roller.js](dice-roller.js)
 Takes a single parameter (a number) from the command line and rolls that many six-sided dice. 
 
 Example:
