@@ -17,17 +17,17 @@ A function such that it takes 2 input and prints a suggestion. (Boolean represen
 
 Output:
 ```
-I'm hungry and I have 20 minutes for lunch.
-Try to eat at a nearby food store
----
-I'm hungry and I have 50 minutes for lunch.
-You are in the bootcamp, are you sure you got more than 30 minute?!
----
-I'm not hungry and I have 30 minutes for lunch.
-Go back to work!
----
-I'm hungry and I have 15 minutes for lunch.
-Pick something up and eat in the lab
+  I'm hungry and I have 20 minutes for lunch.
+  Try to eat at a nearby food store
+  ---
+  I'm hungry and I have 50 minutes for lunch.
+  You are in the bootcamp, are you sure you got more than 30 minute?!
+  ---
+  I'm not hungry and I have 30 minutes for lunch.
+  Go back to work!
+  ---
+  I'm hungry and I have 15 minutes for lunch.
+  Pick something up and eat in the lab
 ```
 
 ## stringReverser.js
@@ -52,4 +52,16 @@ node pig-latin Hi my name is John
 ```bash
 node pig-latin this is all just gibberish
   # output: isthay isyay allyay ustjay ibberishgay
+```
+## concepts.js
+Joins an array of strings.
+
+Given
+```javascript
+const conceptList = ["gists", "types", "operators", "iteration", "problem solving"];
+console.log(conceptList);
+```
+```bash
+node concepts.js
+# returns: Today I learned about gists, types, operators, iteration, problem solving.
 ```
