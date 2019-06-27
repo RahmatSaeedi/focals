@@ -65,3 +65,22 @@ console.log(conceptList);
 node concepts.js
 # returns: Today I learned about gists, types, operators, iteration, problem solving.
 ```
+
+## password.js
+Takes a command line argument (a password) and obfuscates it by following a few rules.
+* Obfuscation Rules
+    * Every "a" in the string should be replaced with a "4".
+    * Every "e" in the string should be replaced with a "3".
+    * Every "o" (oh) in the string should be replaced with a "0" (zero).
+    * Every "l" (el) in the string should be replaced with a "1" (one).
+
+```bash 
+node password.js password
+# Returns: p4ssw0rd
+
+node password.js abracadabra
+# Returns: 4br4c4d4br4
+
+node password.js audaciously
+# Returns: 4ud4ci0us1y
+```
