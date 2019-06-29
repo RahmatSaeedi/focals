@@ -1,3 +1,4 @@
+// Music library managed by Methods
 // jshint esversion : 6
 const library = {
   tracks: {
