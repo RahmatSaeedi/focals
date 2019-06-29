@@ -123,18 +123,65 @@ true
 > node isPalindrome "foo"
 false
 ```
+## [sumRecursively.js](sumRecursively.js)
+Sums 1 to n recursively.
+```js
+// Example
+sumRecursively(4);
+// Returns: 10
+```
+
+## [printNestedArrays.js](printNestedArrays.js)
+Prints the content of a nested array.
+
+```js
+const myArray = [1, [[[[[2]]]]], 3, [4, 5, [6, [7]], 8, 9], 10];
+printNestedArrays(myArray);
+/* Returns
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+*/
+```
+
+## [sumRecursivelyFromTo](sumRecursivelyFromTo.js)
+Sums `fromN` to `toN` recursively. Includes the end points. Assumes integer inputes, with fromN smaller than toN.
+```js
+// Example
+sumRecursivelyFromTo(3, 7);
+// Returns: 25
+
+```
+## [sumArray.js](sumArray.js)
+Sums all the numbers in a nested array, recursively.
+
+|            `Input`            | `Output` |
+|:---------------------------:|:------:|
+| `[1, 2, 3, 4, 5]`             |   15   |
+| `[[1, 2, [[3], 4]], 5, []]`   |   15   |
+| `[[[[[[[[[[[[[1]]]]]]]]]]]]]` |    1   |
+
 
 # [Music Library](library.js)
 `library.js` is a program that manages music playlists using objects and arrays.
 ### *printPlaylists*
 prints a list of all playlists, in the form:
-  {playlist ID}: {playlist name} - {#} tracks
-  p01: Coding Music - 2 tracks
+
+{playlist ID}: {playlist name} - {#} tracks
+p01: Coding Music - 2 tracks
 
 ### *printTracks*
 Prints a list of all tracks, using the following format
-  {trackID}: {track name} by {artist} ({album})
-  t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
+
+{trackID}: {track name} by {artist} ({album})
+t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
 
 ### *printTrack*
 Simillar to printTracks, but prints info on a single
