@@ -2,6 +2,12 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
+## [spinner1](spinner.js)
+animates a spinner on the console, (character |/-\|/-\| in that order), as though it is spinning
+
+![spinner](images/spinner1.gif)
+
+
 ## [typewriter](typewriter.js)
 Hello there from the other side of the monitor.
 
