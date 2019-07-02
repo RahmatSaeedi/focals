@@ -2,6 +2,10 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
+## [stdin.js](stdin.js)
+Outputs `.` for each stdin character recieved.
+On `ctrl + c` input, the program terminates.
+
 ## [timer](timer.js)
 Based on the argv inputs, the timer `beeps` after a specified duration.
 Example
