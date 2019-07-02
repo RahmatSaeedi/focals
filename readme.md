@@ -2,6 +2,15 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
+## [typewriter](typewriter.js)
+Hello there from the other side of the monitor.
+
+```bash
+> node typewriter
+Hello there from the other side of the monitor
+# displayed 1 character at a time, 50 milliseconds apart.
+```
+
 ## [hello_timeout](hello_timeout.js)
 
 ```bash
