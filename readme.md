@@ -1,6 +1,64 @@
 # Focals
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
+# Week 2
+## [hello_timeout](hello_timeout.js)
+
+```bash
+> node hello_timeout
+4311o     # printed 1 seconds printed after the file is run
+th3r3     # printed 2 seconds printed after the file is run
+w0r1d     # printed 3 seconds printed after the file is run
+
+```
+
+# [Music Library](library.js)
+## [Music Library with Methods](libraryWithMethods.js)
+Same as `library.js` but uses *methods* to manage the library.
+
+
+## [Music Library](library.js)
+`library.js` is a program that manages music playlists using objects and arrays.
+* *`printPlaylists`* :
+  prints a list of all playlists, in the form:
+  ```
+  {playlist ID}: {playlist name} - {#} tracks
+  p01: Coding Music - 2 tracks
+  ```
+
+* *`printTracks`* : 
+Prints a list of all tracks, using the following format
+  ```
+  {trackID}: {track name} by {artist} ({album})
+  t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
+  ```
+
+* *`printTrack`* : 
+Simillar to printTracks, but prints info on a single
+
+* *`printPlaylist`* : 
+Prints a list of tracks for a given playlist, using the following format:
+
+  ```js
+  printPlaylist('p01')
+  // p01: Coding Music - 2 tracks
+  // t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
+  // t02: Model View Controller by James Dempsey (WWDC 2003)
+  ```
+* *`addTrackToPlaylist`* : 
+Adds an existing track to an existing playlist
+
+* *`addTrack`* : 
+Adds a track to the library
+
+* *`addPlaylist`* : 
+Adds a playlist to the library
+
+* *`printSearchResults`* : 
+Given a query string string, prints a list of tracks where the name, artist or album contains the query string (case insensitive)
+
+
+
 # Week 1
 ## [sum.js](sum.js)
 This file sums the input argumets
@@ -167,45 +225,3 @@ Sums all the numbers in a nested array, recursively.
 | `[1, 2, 3, 4, 5]`             |   15   |
 | `[[1, 2, [[3], 4]], 5, []]`   |   15   |
 | `[[[[[[[[[[[[[1]]]]]]]]]]]]]` |    1   |
-
-
-# [Music Library](library.js)
-`library.js` is a program that manages music playlists using objects and arrays.
-### *printPlaylists*
-prints a list of all playlists, in the form:
-
-{playlist ID}: {playlist name} - {#} tracks
-p01: Coding Music - 2 tracks
-
-### *printTracks*
-Prints a list of all tracks, using the following format
-
-{trackID}: {track name} by {artist} ({album})
-t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
-
-### *printTrack*
-Simillar to printTracks, but prints info on a single
-
-### *printPlaylist*
-Prints a list of tracks for a given playlist, using the following format:
-
-```js
-printPlaylist('p01')
-// p01: Coding Music - 2 tracks
-// t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
-// t02: Model View Controller by James Dempsey (WWDC 2003)
-```
-### *addTrackToPlaylist*
-Adds an existing track to an existing playlist
-
-### *addTrack*
-Adds a track to the library
-
-### *addPlaylist*
-Adds a playlist to the library
-
-### *printSearchResults*
-Given a query string string, prints a list of tracks where the name, artist or album contains the query string (case insensitive)
-
-## [Music Library with Methods](libraryWithMethods.js)
-Same as `library.js` but uses *methods* to manage the library.
