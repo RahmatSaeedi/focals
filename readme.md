@@ -2,6 +2,15 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
+## [interactiveTimer](interactiveTimer.js)
+Interactive timer behavior:
+  * user can press `b` and it beeps right away
+  * user can press `1` to `9` and 
+    * `console.logs` "setting timer for `{x}` seconds..."        
+    * beeps after `{x}` seconds passed
+  * `ctrl + c` logs "Thanks for using", and terminates the program 
+
+
 ## [stdin.js](stdin.js)
 Outputs `.` for each stdin character recieved.
 On `ctrl + c` input, the program terminates.
