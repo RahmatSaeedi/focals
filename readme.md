@@ -2,10 +2,15 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
-## [spinner1](spinner.js)
+## [timer](timer.js)
+Based on the argv inputs, the timer `beeps` after a specified duration.
+Example
+`> node timer 7 8 12` would ring the system bell after 7, 8, and 12 seconds has passed
+
+## [spinner](spinner.js)
 animates a spinner on the console, (character |/-\|/-\| in that order), as though it is spinning
 
-![spinner](images/spinner1.gif)
+![spinner](images/spinner.gif)
 
 
 ## [typewriter](typewriter.js)
