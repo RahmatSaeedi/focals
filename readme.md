@@ -2,7 +2,15 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
-## [interactiveTimer](interactiveTimer.js)
+## [survey.js](survey.js)
+Simillar to a survey, asks a seriers of questions in a specific order, and generates a narrative paragraph.
+
+Paragraph construct
+```js
+`${name} like to play ${sport}. Sometimes ${name} eats ${food} food, because ${name} likes that very much.
+${name} is friend with ${someone}. They like to travel to ${vacationSpot}. In the past, ${name} visited ${placesVisited}.`
+```
+## [interactiveTimer.js](interactiveTimer.js)
 Interactive timer behavior:
   * user can press `b` and it beeps right away
   * user can press `1` to `9` and 
