@@ -2,6 +2,10 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
+## [Server](server.js) - [Client](client.js) 
+`server.js` contains the bare minimum to start a server. It accept multiple connections and send a welcome message to them.
+`client.js` connects to server and sends greeting message.
+
 ## [survey.js](survey.js)
 Simillar to a survey, asks a seriers of questions in a specific order, and generates a narrative paragraph.
 
