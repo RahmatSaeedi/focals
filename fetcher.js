@@ -34,7 +34,6 @@ if (process.argv.length === 4) {
     }
   });
 } else {
-  console.log(process.argv);
   console.log("Expected");
   console.log("node fetcher '[URL]' '[LOCAL FILE PATH]' \r\n\r\n\r\n");
 
