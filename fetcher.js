@@ -14,7 +14,13 @@ if (process.argv.length === 4) {
       if (body && status.statusCode === 200) {
         fs.writeFile(localFilePath, body, (err) => {
           if (!err) {
-            console.log('Fetched successfully.');
+            fs.stat(localFilePath, (err, stats) => {
+              if (!err) {
+                console.log(`Fetched & saved ${stats.size} bytes to ${localFilePath} successfully.`);
+              } else {
+                console.log('Could not obtain the file size.');
+              }
+            });
           } else {
             console.log("Could not save to the the specified path.", err);
           }
