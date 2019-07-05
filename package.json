@@ -1,0 +1,35 @@
+{
+  "name": "focals",
+  "version": "1.0.0",
+  "description": "Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).",
+  "main": "readme.md",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahmatSaeedi/focals.git"
+  },
+  "keywords": [
+    "Lighthouse",
+    "Labs",
+    "Daily",
+    "Challenges",
+    "for",
+    "Node",
+    "JS",
+    "Web",
+    "Development",
+    "program"
+  ],
+  "author": "Rahmat Saeedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahmatSaeedi/focals/issues"
+  },
+  "homepage": "https://github.com/RahmatSaeedi/focals#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}

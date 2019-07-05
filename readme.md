@@ -2,8 +2,14 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
-## [Server](server.js) - [Client](client.js) 
-`server.js` contains the bare minimum to start a server. It accept multiple connections and send a welcome message to them.
+## [requestExample.js]
+Uses `request` pacakge, installable via `npm install request`,  to fetch a page from `example.com`.
+
+## [httpExample.js]
+Makes an example HTTP/1.1 request to example.com:80/ and logs the response.
+
+## [Server](server.js) - [Client](client.js) model
+`server.js` contains the bare minimum to start a server on port 8080. It accept multiple connections and send a welcome message to them.
 `client.js` connects to server and sends greeting message.
 
 ## [survey.js](survey.js)
