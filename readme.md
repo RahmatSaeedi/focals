@@ -2,10 +2,16 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 2
-## [requestExample.js]
+## [fetcher.js](fetcher.js)
+A small command line node app which takes a URL and a local file path, as command-line arguments, and downloads the resource to the specified path.
+```bash
+> node fetcher.js http://www.example.com/ ./index.html
+Downloaded and saved 3261 bytes to ./index.html
+```
+## [requestExample.js](requestExample.js)
 Uses `request` pacakge, installable via `npm install request`,  to fetch a page from `example.com`.
 
-## [httpExample.js]
+## [httpExample.js](httpExample.js)
 Makes an example HTTP/1.1 request to example.com:80/ and logs the response.
 
 ## [Server](server.js) - [Client](client.js) model
