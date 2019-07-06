@@ -25,7 +25,7 @@ fetchBreedDescription('Siberian', callback);
 // where possible callbacks:  callback(null, [STRING])
 ```
 
-## Testing
+## [Testing](json_the_cat/test/breedFetcherTest.js)
 To test the program run `npx mocha`
 
 # Week 2
