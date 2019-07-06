@@ -1,6 +1,6 @@
 {
   "name": "iss_spotter",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An app for space enthusiasts who are interested in spotting the International Space Station (ISS). Using IP geolocation, predicts the next time ISS would be flying over and might be visible with naked eyes.",
   "main": "index.js",
   "scripts": {
