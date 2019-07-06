@@ -1,5 +1,5 @@
-# [Cats as a Service]()
-## [index.js](index.js)
+# [Cats as a Service](https://github.com/RahmatSaeedi/focals/blob/master/json_the_cat/)
+## [index.js](https://github.com/RahmatSaeedi/focals/blob/master/json_the_cat/index.js)
 Processes `argv` input and passes cat-breeds to `breedFetcher.js` to obtain its description, and to prints a short description of the breed.
 ```bash
 > node index Siberian Chartreux
@@ -13,7 +13,7 @@ Chartreux Info:
 The Chartreux is generally silent but communicative. Short play sessions, mixed with naps and meals are their perfect day. Whilst appreciating any attention you give them, they are not demanding, content instead to follow you around devotedly, sleep on your bed and snuggle with you if you’re not feeling well.
 '
 ```
-## [Breed Fetcher](breedFetcher.js)
+## [Breed Fetcher](https://github.com/RahmatSaeedi/focals/blob/master/json_the_cat/breedFetcher.js)
 Returns queried details about a cat breeds. Users can provide any breed name, causing the application to fetch the information from [`thecatapi.com`](https://thecatapi.com/).
 
 ```js
@@ -22,5 +22,5 @@ fetchBreedDescription('Siberian', callback);
 // where possible callbacks:  callback(null, [STRING])
 ```
 
-## [Testing](test/breedFetcherTest.js)
+## [Testing](https://github.com/RahmatSaeedi/focals/blob/master/json_the_cat/test/breedFetcherTest.js)
 To test the program run `npx mocha`

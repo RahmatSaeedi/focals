@@ -1,6 +1,6 @@
 {
   "name": "json_the_cat",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A command line app that returns info about a cat breed, using thecatapi.com datasets.",
   "main": "breedFetcher.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RahmatSaeedi/focals/tree/master/json_the_cat"
+    "url": "git+https://github.com/RahmatSaeedi/focals/blob/master/json_the_cat/"
   },
   "keywords": [
     "command line app",
