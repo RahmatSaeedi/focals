@@ -1,10 +1,10 @@
 {
   "name": "json_the_cat",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A command line app that returns info about a cat breed, using thecatapi.com datasets.",
   "main": "breedFetcher.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",

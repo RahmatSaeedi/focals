@@ -14,7 +14,7 @@ if (process.argv.length > 2) {
     });
   });
 } else {
-  console.log("Expected");
+  console.log("Expected: ");
   console.log("node breedFetcher '[breed1]' '[breed2]'  '[...]'\r\n\r\n\r\n");
 
   console.log("Help: Try the following command");
