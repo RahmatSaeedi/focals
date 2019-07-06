@@ -1,0 +1,35 @@
+{
+  "name": "iss_spotter",
+  "version": "1.0.1",
+  "description": "An app for space enthusiasts who are interested in spotting the International Space Station (ISS). Using IP geolocation, predicts the next time ISS would be flying over and might be visible with naked eyes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahmatSaeedi/focals/tree/master/iss_spotter"
+  },
+  "keywords": [
+    "space",
+    "spotting",
+    "International Space Station",
+    "ISS",
+    "visible",
+    "lighthouselabs",
+    "web development project"
+  ],
+  "author": "Rahmat Saeedi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahmatSaeedi/focals/issues"
+  },
+  "homepage": "https://github.com/RahmatSaeedi/focals/tree/master/iss_spotter#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  },
+  "devDependencies": {
+    "request-promise-native": "^1.0.7"
+  }
+}
