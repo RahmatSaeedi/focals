@@ -51,6 +51,12 @@ fetchBreedDescription('Siberian', callback);
 To test the program run `npx mocha`
 
 # Week 2
+## [pizza.js](pizza.js)
+A class with `getters` and `setters` to manipulate properties of a pizza.
+
+## [Todo List](todo_list.js)
+An command-line Todo List app, built to learn OOP.
+
 ## [fetcher.js](fetcher.js)
 A small command line node app which takes a URL and a local file path, as command-line arguments, and downloads the resource to the specified path.
 ```bash

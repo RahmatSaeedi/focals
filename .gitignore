@@ -1,3 +1,5 @@
+.gitignore
+Todo_List/
 shouldBuyCar/
 node_modules/
 package-lock.json/
