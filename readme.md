@@ -2,6 +2,7 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 3
+
 ## [organisationTree](organisationTree.js)
 A class, `Employee`, that creates an organisational tree, with the following properties:
  * `Employee.name`: a string storing employee's name
@@ -13,6 +14,20 @@ A class, `Employee`, that creates an organisational tree, with the following pro
  * `Employee.numberOfPeopleToCEO`: returns the number of people between the employee and the CEO.
  * `Employee.sameBoss(someone)`: checks whether _someone_ and the employee share the same buss. 
 
+## Vamper
+An exercise that implements some simple, non-recursive tree node methods as an introduction to Trees data architecture.
+
+`Vamper class` provides lineage information, such as
+* a vampire's creator.
+* number of vampires has a vampire created.
+* number of vampires away from the _original vampire_ a vampire is.
+* compares seniority two vampires. (Who is closer to the original vampire)
+* closest common ancestor of two vampires.
+
+
+Lineage Info:
+
+![vampr linage](images/vampr.png)
 
 # [ISS Spotter](iss_spotter/)
 An app for space enthusiasts who are interested in spotting the International Space Station (ISS). The space station is visible because it reflects sunlight. However, unlike the Moon, the space station isn't bright enough to be seen during the day. It can only be seen when it is dawn or dusk at your location. 
