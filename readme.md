@@ -1,6 +1,19 @@
 # Focals
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
+# Week 3
+## [organisationTree](organisationTree.js)
+A class, `Employee`, that creates an organisational tree, with the following properties:
+ * `Employee.name`: a string storing employee's name
+ * `Employee.title`: a string storing employee's title
+ * `Employee.salary`: a number storing employee's salary
+ * `Employee.boss`: an object, pointing to the parent node, representing employee's supervisor
+ * `Employee.subordinates`: an array of objects, representing Employee's subordinates
+ * `Employee.addSubordinates(sub)`: adds _sub_ as a subordinate to `Employee.subordinates` array. _sub_ is an instance of _Employee_ class.
+ * `Employee.numberOfPeopleToCEO`: returns the number of people between the employee and the CEO.
+ * `Employee.sameBoss(someone)`: checks whether _someone_ and the employee share the same buss. 
+
+
 # [ISS Spotter](iss_spotter/)
 An app for space enthusiasts who are interested in spotting the International Space Station (ISS). The space station is visible because it reflects sunlight. However, unlike the Moon, the space station isn't bright enough to be seen during the day. It can only be seen when it is dawn or dusk at your location. 
 
