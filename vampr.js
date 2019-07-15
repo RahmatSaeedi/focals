@@ -104,8 +104,8 @@ class Vampire {
     }
   }
 
-  //Count the total number of descendents that a vampire has
-  get totalNumberOfDescendents() {
+  //Count the total number of descendants that a vampire has
+  get totalNumberOfDescendants() {
     let n = 0;
     const counter = (vampire) => {
       for (let offspring of vampire.offsprings) {
@@ -116,6 +116,34 @@ class Vampire {
 
     counter(this);
     return n;
+  }
+
+  // Searches for a vampire with a given name;
+  vampireWithName(name) {
+    name = typeof(name) === 'string' ? name : '';
+    if (name) {
+      const search = (vampire) => {
+        for (let offspring of vampire.offsprings) {
+          if (offspring.name === name) {
+            return offspring;
+          } else {
+            const r = search(offspring);
+            if (r !== undefined) {
+              return r;
+            }
+          }
+        }
+      };
+
+      let r = search(this);
+      if (r !== undefined) {
+        return r;
+      } else {
+        return null;
+      }
+    } else {
+      return null;
+    }
   }
 }
 

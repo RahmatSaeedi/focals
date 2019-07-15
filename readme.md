@@ -17,12 +17,13 @@ Here are some of the methods / properties of this calss.
 * _youthfulness()_ : Returns the number of vampires to the original vampire
 * _isMoreSeniorThan( someVampire )_ : Returns true if this vampire is more senior than the other vampire (_someVampire_).
 * _closestCommonAncestor( someVampire )_ : Returns the closest common ancestor of two vampires.
-* _totalNumberOfDescendents()_ : Counts the total number of descendents that this vampire has
+* _totalNumberOfDescendants()_ : Counts the total number of descendants that this vampire has
+* _vampireWithName(name)_ : Returns the vampire object with that name, or null if no descendant-vampire with that name exists
 
 ### Mocha Chai Test
 To run the test, issue the following commad `npm test -- test/vampr.js`
 
-The output should be simmillar to thee following:
+The output should be simillar to thee following:
 ```bash
 > mocha "test/vampr.js"
 
@@ -53,11 +54,21 @@ The output should be simmillar to thee following:
       √ should be that vampire if same vampire is used
       √ should be the more senior vampire if a direct ancestor is used
       √ should be root for offspring 8 and offspring 7
-    totalNumberOfDescendents
+    totalNumberOfDescendants
       √ should return 8 for the rootVampire
-      √ should return 0 for the vamprire without descendents
+      √ should return 0 for the vamprire without descendants
+    vampireWithName
+      √ Returns 'null' if vampire name does not exists.
+      √ Returns correct vampire for descendant 'offspring1'
+      √ Returns correct vampire for descendant 'offspring2'
+      √ Returns correct vampire for descendant 'offspring3'
+      √ Returns correct vampire for descendant 'offspring4'
+      √ Returns correct vampire for descendant 'offspring5'
+      √ Returns correct vampire for descendant 'offspring6'
+      √ Returns correct vampire for descendant 'offspring7'
+      √ Returns correct vampire for descendant 'offspring8'
 
-  21 passing (16ms)
+  30 passing (16ms)
 ```
 
 
