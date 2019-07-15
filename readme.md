@@ -2,15 +2,60 @@
 Daily challenges from [Light House Labs Web Development Bootcamp](https://www.lighthouselabs.ca/web-bootcamp).
 
 # Week 3
-## Vamper
+## Vampr
 An exercise that implements some simple, non-recursive tree node methods as an introduction to Trees data architecture.
 
-`Vamper class` provides lineage information, such as
+`Vampire class` provides lineage information, such as
 * a vampire's creator.
 * number of vampires has a vampire created.
 * number of vampires away from the _original vampire_ a vampire is.
 * compares seniority two vampires. (Who is closer to the original vampire)
 * closest common ancestor of two vampires.
+### Methods and properties:
+Here are some of the methods / properties of this calss.
+* _numberOfOffsprings()_ : Returns the total number of vampires created by that vampire
+* _youthfulness()_ : Returns the number of vampires to the original vampire
+* _isMoreSeniorThan( someVampire )_ : Returns true if this vampire is more senior than the other vampire (_someVampire_).
+* _closestCommonAncestor( someVampire )_ : Returns the closest common ancestor of two vampires.
+
+### Mocha Chai Test
+To run the test, issue the following commad `npm test -- test/vampr.js`
+
+The output should be simmillar to thee following:
+```bash
+> mocha "test/vampr.js"
+
+
+
+  Vampire
+    addOffspring
+      √ should get added to offsprings
+      √ should add parent as the creator
+    numberOfOffsprings
+      √ should get the correct number of offsprings
+    youthfulness
+      √ root should be 0 from original
+      √ offspring1 should be 1 from original
+      √ offspring2 should be 2 from original
+      √ offspring3 should be 3 from original
+      √ offspring4 should be 4 from original
+      √ offspring5 should be 5 from original
+    isMoreSeniorThan
+      √ should return true when called on root vampire
+      √ should return false when called with root vampire
+      √ should return true when a vampire is more senior
+      √ should return false when a vampire is not more senior
+    closestCommonAncestor
+      √ should be the root vampire for any vampire and the root vampire
+      √ should be the root vampire for first two offspring
+      √ should be offspring 3 for offspring 4 and 7
+      √ should be that vampire if same vampire is used
+      √ should be the more senior vampire if a direct ancestor is used
+      √ should be root for offspring 8 and offspring 7
+
+
+  19 passing (16ms)
+```
 
 
 Example Lineage Info:
