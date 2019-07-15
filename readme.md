@@ -17,6 +17,7 @@ Here are some of the methods / properties of this calss.
 * _youthfulness()_ : Returns the number of vampires to the original vampire
 * _isMoreSeniorThan( someVampire )_ : Returns true if this vampire is more senior than the other vampire (_someVampire_).
 * _closestCommonAncestor( someVampire )_ : Returns the closest common ancestor of two vampires.
+* _totalNumberOfDescendents()_ : Counts the total number of descendents that this vampire has
 
 ### Mocha Chai Test
 To run the test, issue the following commad `npm test -- test/vampr.js`
@@ -52,9 +53,11 @@ The output should be simmillar to thee following:
       √ should be that vampire if same vampire is used
       √ should be the more senior vampire if a direct ancestor is used
       √ should be root for offspring 8 and offspring 7
+    totalNumberOfDescendents
+      √ should return 8 for the rootVampire
+      √ should return 0 for the vamprire without descendents
 
-
-  19 passing (16ms)
+  21 passing (16ms)
 ```
 
 

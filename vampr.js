@@ -103,6 +103,21 @@ class Vampire {
       console.log(`That was not a Vampire. What are you trying to do?`);
     }
   }
+
+  //Count the total number of descendents that a vampire has
+  get totalNumberOfDescendents() {
+    let n = 0;
+    const counter = (vampire) => {
+      for (let offspring of vampire.offsprings) {
+        n ++;
+        counter(offspring);
+      }
+    };
+
+    counter(this);
+    return n;
+  }
 }
+
 
 module.exports = Vampire;

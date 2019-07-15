@@ -179,4 +179,39 @@ describe("Vampire", () => {
       expect(offspring8.closestCommonAncestor(offspring7).name).to.equal(rootVampire.name);
     });
   });
+
+  describe("totalNumberOfDescendents", () => {
+    let rootVampire, offspring1, offspring2, offspring3, offspring4, offspring5, offspring6, offspring7, offspring8;
+    beforeEach(() => {
+      rootVampire = new Vampire("root");
+      offspring1 = new Vampire("a");
+      offspring2 = new Vampire("b");
+      offspring3 = new Vampire("c");
+      offspring4 = new Vampire("d");
+      offspring5 = new Vampire("e");
+      offspring6 = new Vampire("f");
+      offspring7 = new Vampire("g");
+      offspring8 = new Vampire("h");
+      
+      rootVampire.addOffspring(offspring1);
+      rootVampire.addOffspring(offspring2);
+      rootVampire.addOffspring(offspring3);
+      offspring3.addOffspring(offspring4);
+      offspring3.addOffspring(offspring5);
+      offspring5.addOffspring(offspring6);
+      offspring6.addOffspring(offspring7);
+      offspring2.addOffspring(offspring8);
+    });
+
+    it("should return 8 for the rootVampire", () => {
+      expect(rootVampire.totalNumberOfDescendents).to.equal(8);
+    });
+
+    it("should return 0 for the vamprire without descendents", () => {
+      expect(offspring1.totalNumberOfDescendents).to.equal(0);
+      expect(offspring8.totalNumberOfDescendents).to.equal(0);
+      expect(offspring4.totalNumberOfDescendents).to.equal(0);
+      expect(offspring7.totalNumberOfDescendents).to.equal(0);
+    });
+  });
 });
