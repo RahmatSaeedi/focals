@@ -1,4 +1,4 @@
-class Vamper {
+class Vampire {
   constructor(name, yearConverted) {
     this.name = name;
     this.yearConverted = yearConverted;
@@ -8,13 +8,13 @@ class Vamper {
 
 
   set creator(creator) {
-    creator = creator instanceof Vamper ? creator : {};
+    creator = creator instanceof Vampire ? creator : null;
     this._creator = creator;
   }
 
   // sets the year a vampire was converted into a vampire
   set yearConverted(year) {
-    year = typeof(year) === 'number' ? year : null;
+    year = typeof(year) === 'number' ? year : false;
     this._year = year;
   }
 
@@ -44,60 +44,65 @@ class Vamper {
   get youthfulness() {
     let n = 0;
     let currentVampire = this;
-    while (currentVampire.creator !== null) {
-      currentVampire = this.creator;
+    while (currentVampire.creator !== null && n < 8) {
+      currentVampire = currentVampire.creator;
       n++;
     }
     return n;
   }
 
   // Adds the vampire as an offspring of this vampire
-  addOffsprings(offspring) {
-    offspring = offspring instanceof Vamper ? offspring : {};
+  addOffspring(offspring) {
+    offspring = offspring instanceof Vampire ? offspring : null;
     this.offsprings.push(offspring);
+    offspring.creator = this;
   }
 
   // Returns true if this vampire is more senior than the other vampire. (Who is closer to the original vampire)
   isMoreSeniorThan(vampire) {
-    vampire = vampire instanceof Vamper ? vampire : {};
+    vampire = vampire instanceof Vampire ? vampire : null;
     return this.youthfulness <= vampire.youthfulness;
   }
 
   // Returns the closest common ancestor of two vampires
   closestCommonAncestor(vampire) {
-    vampire = vampire instanceof Vamper ? vampire : {};
+    vampire = vampire instanceof Vampire ? vampire : null;
+    if (vampire) {
+      let yOfMe = this.youthfulness;
+      let yOfThem = vampire.youthfulness;
 
-    let yOfMe = this.youthfulness;
-    let yOfThem = vampire.youthfulness;
+      let myAncestor = this;
+      let theirAncestor = vampire;
 
-    let myAncestor = this;
-    let theirAncestor = vampire;
+      if (yOfMe > yOfThem) {
+        let n = yOfMe - yOfThem;
+        while (n > 0) {
+          myAncestor = myAncestor.creator;
+          n--;
+        }
+      } else if (yOfThem > yOfMe) {
+        let n = yOfThem - yOfMe;
+        while (n > 0) {
+          theirAncestor = theirAncestor.creator;
+          n--;
+        }
+      }
 
-    if (yOfMe > yOfThem) {
-      let n = yOfMe - yOfThem;
-      while (n > 0) {
+      while (myAncestor !== theirAncestor && (myAncestor !== null || theirAncestor !== null)) {
         myAncestor = myAncestor.creator;
-        n--;
-      }
-    } else if (yOfThem > yOfMe) {
-      let n = yOfThem - yOfMe;
-      while (n > 0) {
         theirAncestor = theirAncestor.creator;
-        n--;
       }
-    }
 
-    while (myAncestor !== theirAncestor && (myAncestor !== {} && theirAncestor !== {})) {
-      myAncestor = myAncestor.creator;
-      theirAncestor = theirAncestor.creator;
-    }
-
-    if (myAncestor === theirAncestor) {
-      return myAncestor;
+      if (myAncestor === theirAncestor) {
+        return myAncestor;
+      } else {
+        console.log(`Something went wrong! There is no common ancesstors. between ${this.name} and ${vampire.name}`);
+        return false;
+      }
     } else {
-      console.log('Something went wrong!');
-      return {};
+      console.log(`That was not a Vampire. What are you trying to do?`);
     }
-
   }
 }
+
+module.exports = Vampire;
